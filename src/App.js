@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react'
+import Random from './components/Random';
 
 import Map from './components/Map'
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
       <Map center={center} />
+      {/* <Random /> */}
     </div>
   );
 }
