@@ -19,10 +19,11 @@ function App() {
       <div className="App">
         <button onClick={()=> setShow(true) }>Guess</button>
         <Modal show={show}/>
+
       </div>
       
+      <MapControls />
       
-      {/* <Random /> */}
     </div>
   );
 }
