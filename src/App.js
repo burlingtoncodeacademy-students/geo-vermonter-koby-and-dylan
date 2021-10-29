@@ -1,8 +1,7 @@
 import './App.css';
 import { useState } from 'react'
-import Random from './components/Random';
 import Start from './components/start.js'
-
+// import MapControls './components/MapControls.js'
 import Map from './components/Map'
 import Modal from './components/guessModal';
 
@@ -14,6 +13,7 @@ function App() {
 
   return (
     <div>
+     {/* <MapControls /> */}
       <Map center={center} />
       <Start/>
       <div className="App">
@@ -22,7 +22,7 @@ function App() {
 
       </div>
       
-      <MapControls />
+     
       
     </div>
   );
