@@ -7,7 +7,7 @@ function Start(){
         }
 
     return(
-        <div>
+        <div class="sidebar">
         <button disabled={disable} onClick={() => setDisable(true)}>Start
         </button>
         <button disabled={!disable}>Guess</button>

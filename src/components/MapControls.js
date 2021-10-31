@@ -1,3 +1,4 @@
+import react from "react";
 import { useState } from "react";
 import Map from "./Map";
 import L from "leaflet";
@@ -7,7 +8,6 @@ import Random from "./Random";
 function MapControls() {
     let startPosition = IsInVermont(Random());
     const [newCenter, setNewCenter] = useState(startPosition);
-    
     console.log(startPosition)
 
   let newLat = newCenter[0];

@@ -1,12 +1,12 @@
 import React from 'react'
  const Modal = props => {
  return (
-     <div className="modal">
-<div className="modal-content">
-<div className="modal-header">
-<h4 className="modal-title">Vermont Counties</h4>
+     <div class="modal">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Vermont Counties</h4>
 </div>
-<div className="modal-body">
+<div class="modal-body">
     <button>Addison</button>
     <button>Bennington</button>
     <button>Caledonia</button>
@@ -23,7 +23,7 @@ import React from 'react'
     <button>Windsor</button>
     </div>
 
-    <div className="modal-footer"> <button className="button">Cancel</button></div>
+    <div class="modal-footer"> <button class="button">Cancel</button></div>
      </div>
     </div>
  )
