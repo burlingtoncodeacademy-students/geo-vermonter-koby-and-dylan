@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Modal from './Modal'
 
 function Start(props){
     const [disable, setDisable] = React.useState(false)
@@ -15,8 +16,12 @@ function Start(props){
         <button disabled={!disable} onClick={() => setShow(true)}>Guess</button>
         
         <button disabled={!disable}>I give up!</button>
-        {/* <Modal/> */}
-        {show && <Modal showModal={setShow} />}
+        <Modal/>
+        {/* {console.log()} */}
+        {show && <Modal showModal={props.showModal} />}
+
+
+        
         </div>
 )    
     }    

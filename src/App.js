@@ -4,12 +4,14 @@ import { useState } from "react";
 import Start from "./components/start.js";
 import MapControls from "./components/MapControls";
 import Map from "./components/Map";
-import Modal from "./components/guessModal";
+import Modal from "./components/Modal";
 
 function App() {
   const [center, setCenter] = useState([43.88, -72.7317]);
 
   // const [show, setShow] = useState(false);
+
+  const[modalOpen, setModalOpen] = useState(false)
 
   return (
     <div id="container">
@@ -30,12 +32,13 @@ function App() {
       </div> 
       <div id="footer">
         <h2>Footer Area</h2>
-      </div>
+        </div>
     
-      <div className="App">
-        {/* <button onClick={() => setShow(true)}>Guess</button>
-        {show && <Modal showModal={setShow} />} */}
-      </div>
+      
+        <button class="openModalBtn" onClick={() =>{setModalOpen(true)
+        }}>Open</button>
+        {modalOpen && <Modal setOpenModal={setModalOpen} />}
+        
     </div>
   );
 }
