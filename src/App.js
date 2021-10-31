@@ -34,7 +34,7 @@ function App() {
     
       <div className="App">
         <button onClick={() => setShow(true)}>Guess</button>
-        <Modal show={show} />
+        {show && <Modal showModal={setShow} />}
       </div>
     </div>
   );
