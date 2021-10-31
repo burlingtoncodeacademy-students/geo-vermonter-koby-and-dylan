@@ -9,7 +9,7 @@ import Modal from "./components/guessModal";
 function App() {
   const [center, setCenter] = useState([43.88, -72.7317]);
 
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
   return (
     <div id="container">
@@ -33,8 +33,8 @@ function App() {
       </div>
     
       <div className="App">
-        <button onClick={() => setShow(true)}>Guess</button>
-        {show && <Modal showModal={setShow} />}
+        {/* <button onClick={() => setShow(true)}>Guess</button>
+        {show && <Modal showModal={setShow} />} */}
       </div>
     </div>
   );
