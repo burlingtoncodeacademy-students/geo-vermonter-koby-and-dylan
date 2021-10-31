@@ -23,7 +23,8 @@ import React from 'react'
     <button>Windsor</button>
     </div>
 
-    <div class="modal-footer"> <button class="button">Cancel</button></div>
+    <div class="modal-footer"> 
+    <button class="button" onClick={() => props.showModal(false)}>Cancel</button></div>
      </div>
     </div>
  )

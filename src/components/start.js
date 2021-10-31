@@ -2,7 +2,7 @@ import React from 'react'
 function Start(){
     const [disable, setDisable] = React.useState(false)
     const Modal = props =>{
-        if(!props.show){
+        if(!props.showModal){
             return null}
         }
 
