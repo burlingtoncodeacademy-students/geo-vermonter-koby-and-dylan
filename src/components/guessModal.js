@@ -1,5 +1,5 @@
 import React from 'react'
- const Modal = props => {
+ const Modal = ({setOpenModal}) => {
  return (
      <div class="modal">
 <div class="modal-content">
@@ -24,7 +24,7 @@ import React from 'react'
     </div>
 
     <div class="modal-footer"> 
-    <button class="button" onClick={() => props.showModal(false)}>Cancel</button></div>
+    <button class="button" onClick={() => setOpenModal(false)}>Cancel</button></div>
      </div>
     </div>
  )
