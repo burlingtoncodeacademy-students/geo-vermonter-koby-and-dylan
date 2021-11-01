@@ -7,6 +7,7 @@ import React from 'react'
 <h4 class="modal-title">Vermont Counties</h4>
 </div>
 <div class="modal-body">
+    {/* buttons for choices for counties in vermont */}
     <button>Addison</button>
     <button>Bennington</button>
     <button>Caledonia</button>
@@ -24,6 +25,7 @@ import React from 'react'
     </div>
 
     <div class="modal-footer"> 
+    {/* button the closes the modal */}
     <button class="button" onClick={() => setOpenModal(false)}>Cancel</button></div>
      </div>
     </div>
