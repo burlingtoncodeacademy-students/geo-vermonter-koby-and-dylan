@@ -21,6 +21,7 @@ function App() {
       <div id="middle-section">
         <div class="sidebar">
           <h2>Maple Syrup...</h2>
+          {/* when start button is clicked enable the Guess and I give up buttons */}
           <button disabled={disable} onClick={() => setDisable(true)}>
             Start
           </button>

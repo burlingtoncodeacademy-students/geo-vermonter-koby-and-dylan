@@ -13,6 +13,7 @@
 }
 
 #header {
+  /*  header within the container */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -20,12 +21,14 @@
 }
 
 #middle-section {
+  /* entire middle of the page  */
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .sidebar {
+  /* sidebar of the page containing start guess and I give up buttons and modal when called */
 display: flex;
 flex-direction: column;
 
@@ -33,13 +36,12 @@ width: 200px;
 
 }
 
-#map-area {
 
-}
 
 
 
 .modal {
+  /* modal that opens the list of counties in the sidebar */
   display: flex;
   flex-direction: column;
   /* width: 40vw; */
@@ -49,6 +51,7 @@ width: 200px;
 }
 
 .modal-body {
+  /* space of the button in the modal */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
