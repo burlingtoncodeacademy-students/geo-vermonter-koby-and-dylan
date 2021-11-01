@@ -22,7 +22,10 @@ const [startGamePosition, setStartGamePosition] = useState(true)
         <div class="sidebar">
           <h2>Maple Syrup...</h2>
           {/* when start button is clicked enable the Guess and I give up buttons */}
-          <button disabled={disable} onClick={() => setDisable(true)}>
+          <button disabled={disable} onClick={() => {
+            setDisable(true)
+            setStartGamePosition(false)
+          }}>
             Start
           </button>
           <button disabled={!disable} onClick={() => setModalOpen(true)}>
