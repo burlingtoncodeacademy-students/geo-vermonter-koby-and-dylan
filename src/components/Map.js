@@ -7,7 +7,7 @@ function Map(props) {
   return (
     <MapContainer
       center={props.center}
-      zoom={8}
+      zoom={props.zoom} /** fixed to be able to zoom when called diffent times */
       scrollWheelZoom={false}
       doubleClickZoom={false}
       zoomControl={false}
