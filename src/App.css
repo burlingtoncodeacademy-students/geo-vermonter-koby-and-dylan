@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   /* border: 1px solid black; */
-
 }
 
 #container {
   /* display: flex; */
   /* flex-direction: column; */
   width: (100vw - 2px);
-  min-width: fit-content
+  min-width: fit-content;
 }
 
 #header {
@@ -29,16 +28,11 @@
 
 .sidebar {
   /* sidebar of the page containing start guess and I give up buttons and modal when called */
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-width: 200px;
-
+  width: 200px;
 }
-
-
-
-
 
 .modal {
   /* modal that opens the list of counties in the sidebar */

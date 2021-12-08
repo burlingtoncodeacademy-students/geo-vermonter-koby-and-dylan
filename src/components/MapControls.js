@@ -37,7 +37,7 @@ function MapControls() {
       <button onClick={goEast}>East</button>
       <button onClick={goWest}>West</button>
 
-      <Map center={newCenter} zoom= {18} />
+      <Map center={newCenter} zoom={18} />
       {/* {L.marker(newCenter).addTo(Map)}  aborted attempt to add a breadcrumb to the map  */}
     </div>
   );

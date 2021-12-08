@@ -8,7 +8,7 @@ import leafletPip from "leaflet-pip";
 function IsInVermont() {
   let inVermont = false;
   let randomStart = [];
-  
+
   while (!inVermont === true) {
     randomStart = Random();
 
