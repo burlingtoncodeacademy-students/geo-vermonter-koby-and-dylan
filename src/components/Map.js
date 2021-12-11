@@ -1,13 +1,18 @@
-import { MapContainer, TileLayer, Polygon, Marker, Polyline } from "react-leaflet";
+import { MapContainer, TileLayer, Polygon, Marker } from "react-leaflet";
 import borderData from "../data/border";
 
 function Map(props) {
-  let vtOutline = borderData.geometry.coordinates[0].map(coords => [coords[1], coords[0]])
+  let vtOutline = borderData.geometry.coordinates[0].map((coords) => [
+    coords[1],
+    coords[0],
+  ]);
 
   return (
     <MapContainer
       center={props.center}
-      zoom={props.zoom} /** fixed to be able to zoom when called diffent times */
+      zoom={
+        props.zoom
+      } /** fixed to be able to zoom when called diffent times */
       scrollWheelZoom={false}
       doubleClickZoom={false}
       zoomControl={false}
